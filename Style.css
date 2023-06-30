@@ -1,0 +1,2085 @@
+/* zala.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+/* .zala-opacity {
+    text-transform: uppercase;
+} */
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.zala-serif {
+    font-family: serif
+}
+
+.zala-sans-serif {
+    font-family: sans-serif
+}
+
+.zala-cursive {
+    font-family: cursive
+}
+
+.zala-monospace {
+    font-family: monospace
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.zala-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.zala-image {
+  height: 70vh;
+  width: 70vh;
+  border-radius: 5000px;
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+#zala :hover{
+    color: red;
+}
+
+.zala-table,
+.zala-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.zala-table-all {
+    border: 1px solid #ccc
+}
+
+.zala-bordered tr,
+.zala-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.zala-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.zala-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.zala-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.zala-hoverable tbody tr:hover,
+.zala-ul.zala-hoverable li:hover {
+    background-color: #ccc
+}
+
+.zala-centered tr th,
+.zala-centered tr td {
+    text-align: center
+}
+
+.zala-table td,
+.zala-table th,
+.zala-table-all td,
+.zala-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.zala-table th:first-child,
+.zala-table td:first-child,
+.zala-table-all th:first-child,
+.zala-table-all td:first-child {
+    padding-left: 16px
+}
+
+.zala-btn,
+.zala-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.zala-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.zala-btn,
+.zala-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.zala-disabled,
+.zala-btn:disabled,
+.zala-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.zala-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.zala-btn.zala-disabled:hover,
+.zala-btn:disabled:hover {
+    box-shadow: none
+}
+
+.zala-badge,
+.zala-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.zala-badge {
+    border-radius: 50%
+}
+
+.zala-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.zala-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.zala-ul li:last-child {
+    border-bottom: none
+}
+
+.zala-tooltip,
+.zala-display-container {
+    position: relative
+}
+
+.zala-tooltip .zala-text {
+    display: none
+}
+
+.zala-tooltip:hover .zala-text {
+    display: inline-block
+}
+
+.zala-ripple:active {
+    opacity: 0.5
+}
+
+.zala-ripple {
+    transition: opacity 0s
+}
+
+.zala-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.zala-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.zala-dropdown-click,
+.zala-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.zala-dropdown-hover:hover .zala-dropdown-content {
+    display: block
+}
+
+.zala-dropdown-hover:first-child,
+.zala-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.zala-dropdown-hover:hover>.zala-button:first-child,
+.zala-dropdown-click:hover>.zala-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.zala-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.zala-check,
+.zala-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.zala-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.zala-bar-block .zala-dropdown-hover,
+.zala-bar-block .zala-dropdown-click {
+    width: 100%
+}
+
+.zala-bar-block .zala-dropdown-hover .zala-dropdown-content,
+.zala-bar-block .zala-dropdown-click .zala-dropdown-content {
+    min-width: 100%
+}
+
+.zala-bar-block .zala-dropdown-hover .zala-button,
+.zala-bar-block .zala-dropdown-click .zala-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.zala-main,
+#main {
+    transition: margin-left .4s
+}
+
+.zala-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.zala-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.zala-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.zala-center .zala-bar {
+    display: inline-block;
+    width: auto
+}
+
+.zala-bar .zala-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.zala-bar .zala-dropdown-hover,
+.zala-bar .zala-dropdown-click {
+    position: static;
+    float: left
+}
+
+.zala-bar .zala-button {
+    white-space: normal
+}
+
+.zala-bar-block .zala-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.zala-bar-block.zala-center .zala-bar-item {
+    text-align: center
+}
+
+.zala-block {
+    display: block;
+    width: 100%
+}
+
+.zala-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.zala-container:after,
+.zala-container:before,
+.zala-panel:after,
+.zala-panel:before,
+.zala-row:after,
+.zala-row:before,
+.zala-row-padding:after,
+.zala-row-padding:before,
+.zala-cell-row:before,
+.zala-cell-row:after,
+.zala-clear:after,
+.zala-clear:before,
+.zala-bar:before,
+.zala-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.zala-col,
+.zala-half,
+.zala-third,
+.zala-twothird,
+.zala-threequarter,
+.zala-quarter {
+    float: left;
+    width: 100%
+}
+
+.zala-col.s1 {
+    width: 8.33333%
+}
+
+.zala-col.s2 {
+    width: 16.66666%
+}
+
+.zala-col.s3 {
+    width: 24.99999%
+}
+
+.zala-col.s4 {
+    width: 33.33333%
+}
+
+.zala-col.s5 {
+    width: 41.66666%
+}
+
+.zala-col.s6 {
+    width: 49.99999%
+}
+
+.zala-col.s7 {
+    width: 58.33333%
+}
+
+.zala-col.s8 {
+    width: 66.66666%
+}
+
+.zala-col.s9 {
+    width: 74.99999%
+}
+
+.zala-col.s10 {
+    width: 83.33333%
+}
+
+.zala-col.s11 {
+    width: 91.66666%
+}
+
+.zala-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .zala-col.m1 {
+        width: 8.33333%
+    }
+
+    .zala-col.m2 {
+        width: 16.66666%
+    }
+
+    .zala-col.m3,
+    .zala-quarter {
+        width: 24.99999%
+    }
+
+    .zala-col.m4,
+    .zala-third {
+        width: 33.33333%
+    }
+
+    .zala-col.m5 {
+        width: 41.66666%
+    }
+
+    .zala-col.m6,
+    .zala-half {
+        width: 49.99999%
+    }
+
+    .zala-col.m7 {
+        width: 58.33333%
+    }
+
+    .zala-col.m8,
+    .zala-twothird {
+        width: 66.66666%
+    }
+
+    .zala-col.m9,
+    .zala-threequarter {
+        width: 74.99999%
+    }
+
+    .zala-col.m10 {
+        width: 83.33333%
+    }
+
+    .zala-col.m11 {
+        width: 91.66666%
+    }
+
+    .zala-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .zala-col.l1 {
+        width: 8.33333%
+    }
+
+    .zala-col.l2 {
+        width: 16.66666%
+    }
+
+    .zala-col.l3 {
+        width: 24.99999%
+    }
+
+    .zala-col.l4 {
+        width: 33.33333%
+    }
+
+    .zala-col.l5 {
+        width: 41.66666%
+    }
+
+    .zala-col.l6 {
+        width: 49.99999%
+    }
+
+    .zala-col.l7 {
+        width: 58.33333%
+    }
+
+    .zala-col.l8 {
+        width: 66.66666%
+    }
+
+    .zala-col.l9 {
+        width: 74.99999%
+    }
+
+    .zala-col.l10 {
+        width: 83.33333%
+    }
+
+    .zala-col.l11 {
+        width: 91.66666%
+    }
+
+    .zala-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.zala-rest {
+    overflow: hidden
+}
+
+.zala-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.zala-content,
+.zala-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.zala-content {
+    max-width: 980px
+}
+
+.zala-auto {
+    max-width: 1140px
+}
+
+.zala-cell-row {
+    display: table;
+    width: 100%
+}
+
+.zala-cell {
+    display: table-cell
+}
+
+.zala-cell-top {
+    vertical-align: top
+}
+
+.zala-cell-middle {
+    vertical-align: middle
+}
+
+.zala-cell-bottom {
+    vertical-align: bottom
+}
+
+.zala-hide {
+    display: none !important
+}
+
+.zala-show-block,
+.zala-show {
+    display: block !important
+}
+
+.zala-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width:1205px) {
+    .zala-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:600px) {
+    .zala-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .zala-modal {
+        padding-top: 30px
+    }
+
+    .zala-dropdown-hover.zala-mobile .zala-dropdown-content,
+    .zala-dropdown-click.zala-mobile .zala-dropdown-content {
+        position: relative
+    }
+
+    .zala-hide-small {
+        display: none !important
+    }
+
+    .zala-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .zala-bar-item.zala-mobile,
+    .zala-dropdown-hover.zala-mobile,
+    .zala-dropdown-click.zala-mobile {
+        text-align: center
+    }
+
+    .zala-dropdown-hover.zala-mobile,
+    .zala-dropdown-hover.zala-mobile .zala-btn,
+    .zala-dropdown-hover.zala-mobile .zala-button,
+    .zala-dropdown-click.zala-mobile,
+    .zala-dropdown-click.zala-mobile .zala-btn,
+    .zala-dropdown-click.zala-mobile .zala-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .zala-modal-content {
+        width: 500px
+    }
+
+    .zala-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .zala-modal-content {
+        width: 900px
+    }
+
+    .zala-hide-large {
+        display: none !important
+    }
+
+    .zala-sidebar.zala-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .zala-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) {
+    .zala-sidebar.zala-collapse {
+        display: none
+    }
+
+    .zala-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .zala-auto {
+        max-width: 100%
+    }
+}
+
+.achievment {
+    margin: 0px 0px;
+    padding: 0px ;
+
+}
+
+.height {
+    min-height: 0;
+}
+
+.zala-top,
+.zala-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.zala-top {
+    top: 0
+}
+
+.zala-bottom {
+    bottom: 0
+}
+
+.zala-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.zala-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.zala-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.zala-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.zala-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.zala-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.zala-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.zala-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.zala-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.zala-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.zala-display-container:hover .zala-display-hover {
+    display: block
+}
+
+.zala-display-container:hover span.zala-display-hover {
+    display: inline-block
+}
+
+.zala-display-hover {
+    display: none
+}
+
+.zala-display-position {
+    position: absolute
+}
+
+.zala-circle {
+    border-radius: 50%
+}
+
+.zala-round-small {
+    border-radius: 2px
+}
+
+.zala-round,
+.zala-round-medium {
+    border-radius: 4px
+}
+
+.zala-round-large {
+    border-radius: 8px
+}
+
+.zala-round-xlarge {
+    border-radius: 16px
+}
+
+.zala-round-xxlarge {
+    border-radius: 32px
+}
+
+.zala-row-padding,
+.zala-row-padding>.zala-half,
+.zala-row-padding>.zala-third,
+.zala-row-padding>.zala-twothird,
+.zala-row-padding>.zala-threequarter,
+.zala-row-padding>.zala-quarter,
+.zala-row-padding>.zala-col {
+    padding: 0 8px
+}
+
+.zala-container,
+.zala-panel {
+    padding: 0.01em 16px
+}
+
+.zala-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.zala-code,
+.zala-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.zala-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.zala-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.verify {
+align-items: center;
+position: absolute;
+color: white;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url('background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstsection{
+    height: 39vh;
+    padding-bottom: 1%;
+    margin-bottom: 0%;
+}
+
+div.gallery {
+    margin: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    /* size: 12px; */
+    transform: scale(1.1);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 30vh;
+  
+  }
+
+div.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.memoriS{
+ padding-top: 330px; !important
+
+}
+
+section{
+margin-top: 0;
+}
+
+.zala-card,
+.zala-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.zala-card-4,
+.zala-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.zala-spin {
+    animation: zala-spin 2s infinite linear
+}
+
+@keyframes zala-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.zala-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.zala-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.zala-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.zala-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.zala-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.zala-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.zala-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.zala-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.zala-animate-input:focus {
+    width: 100% !important
+}
+
+.zala-opacity,
+.zala-hover-opacity:hover {
+    opacity: 0.60
+
+}
+
+.zala-opacity-off,
+.zala-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.zala-opacity-max {
+    opacity: 0.25
+}
+
+.zala-opacity-min {
+    opacity: 0.75
+}
+
+.zala-greyscale-max,
+.zala-grayscale-max,
+.zala-hover-greyscale:hover,
+.zala-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.zala-greyscale,
+.zala-grayscale {
+    filter: grayscale(75%)
+}
+
+.zala-greyscale-min,
+.zala-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.zala-sepia {
+    filter: sepia(75%)
+}
+
+.zala-sepia-max,
+.zala-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.zala-sepia-min {
+    filter: sepia(50%)
+}
+
+.zala-tiny {
+    font-size: 10px !important
+}
+
+.rajputana h2{
+    cursor: pointer;
+}
+
+.rajputana h2:hover {
+
+    color: red;
+
+}
+
+.zala {
+    font-size: 12px !important
+}
+
+.zala-medium {
+    font-size: 15px !important
+}
+
+.zala-large {
+    font-size: 18px !important
+}
+
+.zala-xlarge {
+    font-size: 24px !important
+}
+
+.zala-xxlarge {
+    font-size: 36px !important
+}
+
+.zala-xxxlarge {
+    font-size: 48px !important
+}
+
+.zala-jumbo {
+    font-size: 64px !important
+}
+
+.zala-left-align {
+    text-align: left !important
+}
+
+.zala-right-align {
+    text-align: right !important
+}
+
+.zala-justify {
+    text-align: justify !important
+}
+
+.zala-center {
+    text-align: center !important
+}
+
+.zala-border-0 {
+    border: 0 !important
+}
+
+.zala-border {
+    border: 1px solid #ccc !important
+}
+
+.zala-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.zala-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.zala-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.zala-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.zala-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.zala-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.zala-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.zala-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.zala-section,
+.zala-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.zala-margin {
+    margin: 16px !important
+}
+
+.zala-margin-top {
+    margin-top: 16px !important
+}
+
+.zala-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.zala-margin-left {
+    margin-left: 16px !important
+}
+
+.zala-margin-right {
+    margin-right: 16px !important
+}
+
+.zala-padding-small {
+    padding: 4px 8px !important
+}
+
+.zala-padding {
+    padding: 8px 16px !important
+}
+
+.zala-padding-large {
+    padding: 12px 24px !important
+}
+
+.zala-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.zala-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.zala-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.zala-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.main-padding{
+
+    padding-top: 400px !important;
+    padding-bottom: 200px !important
+}
+
+.zala-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 100px !important;
+}
+
+.zala-padding-top-64 {
+    padding-top: 64px !important
+}
+
+.zala-padding-top-48 {
+    padding-top: 48px !important
+}
+
+.zala-padding-top-32 {
+    padding-top: 32px !important
+}
+
+.zala-padding-top-24 {
+    padding-top: 24px !important
+}
+
+.zala-left {
+    float: left !important
+}
+
+.zala-right {
+    float: right !important
+}
+
+.zala-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.zala-transparent,
+.zala-hover-none:hover {
+    background-color: transparent !important
+}
+
+.zala-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.zala-amber,
+.zala-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.zala-aqua,
+.zala-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.zala-blue,
+.zala-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.zala-light-blue,
+.zala-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.zala-brown,
+.zala-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.zala-cyan,
+.zala-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.zala-blue-grey,
+.zala-hover-blue-grey:hover,
+.zala-blue-gray,
+.zala-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.zala-green,
+.zala-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.zala-light-green,
+.zala-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.zala-indigo,
+.zala-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.zala-khaki,
+.zala-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.zala-lime,
+.zala-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.zala-orange,
+.zala-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.zala-deep-orange,
+.zala-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.zala-pink,
+.zala-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.zala-purple,
+.zala-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.zala-deep-purple,
+.zala-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.zala-red,
+.zala-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.zala-sand,
+.zala-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.zala-teal,
+.zala-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.zala-yellow,
+.zala-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.zala-white,
+.zala-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.zala-black,
+.zala-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.zala-grey,
+.zala-hover-grey:hover,
+.zala-gray,
+.zala-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.zala-light-grey,
+.zala-hover-light-grey:hover,
+.zala-light-gray,
+.zala-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.zala-dark-grey,
+.zala-hover-dark-grey:hover,
+.zala-dark-gray,
+.zala-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.zala-pale-red,
+.zala-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.zala-pale-green,
+.zala-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.zala-pale-yellow,
+.zala-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.zala-pale-blue,
+.zala-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.zala-text-amber,
+.zala-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.zala-text-aqua,
+.zala-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.zala-text-blue,
+.zala-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.zala-text-light-blue,
+.zala-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.zala-text-brown,
+.zala-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.zala-text-cyan,
+.zala-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.zala-text-blue-grey,
+.zala-hover-text-blue-grey:hover,
+.zala-text-blue-gray,
+.zala-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.zala-text-green,
+.zala-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.zala-text-light-green,
+.zala-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.zala-text-indigo,
+.zala-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.zala-text-khaki,
+.zala-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.zala-text-lime,
+.zala-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.zala-text-orange,
+.zala-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.zala-text-deep-orange,
+.zala-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.zala-text-pink,
+.zala-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.zala-text-purple,
+.zala-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.zala-text-deep-purple,
+.zala-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.zala-text-red,
+.zala-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.zala-text-sand,
+.zala-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.zala-text-teal,
+.zala-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.zala-text-yellow,
+.zala-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.zala-text-white,
+.zala-hover-text-white:hover {
+    color: #fff !important
+}
+
+.zala-text-black,
+.zala-hover-text-black:hover {
+    color: #000 !important
+}
+
+.zala-text-grey,
+.zala-hover-text-grey:hover,
+.zala-text-gray,
+.zala-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.zala-text-light-grey,
+.zala-hover-text-light-grey:hover,
+.zala-text-light-gray,
+.zala-hover-text-light-gray:hover {
+    color: rgb(104, 235, 4) !important
+}
+
+.zala-text-dark-grey,
+.zala-hover-text-dark-grey:hover,
+.zala-text-dark-gray,
+.zala-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.zala-border-amber,
+.zala-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.zala-border-aqua,
+.zala-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.zala-border-blue,
+.zala-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.zala-border-light-blue,
+.zala-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.zala-border-brown,
+.zala-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.zala-border-cyan,
+.zala-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.zala-border-blue-grey,
+.zala-hover-border-blue-grey:hover,
+.zala-border-blue-gray,
+.zala-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.zala-border-green,
+.zala-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.zala-border-light-green,
+.zala-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.zala-border-indigo,
+.zala-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.zala-border-khaki,
+.zala-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.zala-border-lime,
+.zala-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.zala-border-orange,
+.zala-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.zala-border-deep-orange,
+.zala-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.zala-border-pink,
+.zala-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.zala-border-purple,
+.zala-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.zala-border-deep-purple,
+.zala-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.zala-border-red,
+.zala-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.zala-border-sand,
+.zala-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.zala-border-teal,
+.zala-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.zala-border-yellow,
+.zala-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.zala-border-white,
+.zala-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.zala-border-black,
+.zala-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.zala-border-grey,
+.zala-hover-border-grey:hover,
+.zala-border-gray,
+.zala-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.zala-border-light-grey,
+.zala-hover-border-light-grey:hover,
+.zala-border-light-gray,
+.zala-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.zala-border-dark-grey,
+.zala-hover-border-dark-grey:hover,
+.zala-border-dark-gray,
+.zala-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.zala-border-pale-red,
+.zala-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.zala-border-pale-green,
+.zala-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.zala-border-pale-yellow,
+.zala-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.zala-border-pale-blue,
+.zala-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
